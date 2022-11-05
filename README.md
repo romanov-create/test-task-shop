@@ -2,10 +2,10 @@
 ### simple Spring boot app 
 
 ## Tools
-PostgreSQL
-Tomcat(spring-boot
-Java 11
-Maven
+- PostgreSQL
+- Tomcat(spring-boot)
+- Java11
+- Maven
 
 ## DB Setting
 Create DB with name shopDB
@@ -22,12 +22,12 @@ send Get http reqest with 2 parametrs:
 
 ### Example: 
 
-request
-Method Get
+- request (method Get)
+
 http://localhost:8888/shop/product?nameFilter=%5E.*%5B1%5D.*%24&amount=10
 
-response
-Json
+- response (Json)
+
 [
     {
         "id": 1,
