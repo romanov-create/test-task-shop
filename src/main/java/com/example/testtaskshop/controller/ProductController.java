@@ -19,7 +19,7 @@ public class ProductController {
 
     @GetMapping("/product")
     @ResponseBody
-    List<Product> getAllWithoutRegEx(@RequestParam("nameFilter") String nameFilter, Integer amount) {
+    List<Product> getAllWithoutRegEx(@RequestParam String nameFilter, @RequestParam Integer amount) {
         return productService.getAllWithoutRegEx(nameFilter, amount);
     }
 }
